@@ -1,0 +1,454 @@
+ @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gloria+Hallelujah&family=Indie+Flower&family=Inter:wght@700;900&family=Kanit:ital,wght@0,500;1,200&family=Lora:ital,wght@0,500;1,500&family=Mr+Dafoe&family=Satisfy&family=Teko:wght@400;500&family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap');
+
+ :root{
+    --qalin: 'Black Ops One', cursive;
+    --daftar: 'Gloria Hallelujah', cursive;
+    --daftar2: 'Indie Flower', cursive;
+    --inter: 'Inter', sans-serif;
+    --kanit: 'Kanit', sans-serif;
+    --lora: 'Lora', serif;
+    --defo: 'Mr Dafoe', cursive;
+    --romantic: 'Satisfy', cursive;
+    --tako: 'Teko', sans-serif;
+    --unut: 'Ubuntu', sans-serif;
+ }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.5;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/IMG/ballondorfull.png);
+    background-size: contain;
+    background-attachment: fixed;
+}
+.navigation{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.733);
+}
+.navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo h2{
+    color: white;
+    font-family: var(--inter);
+    font-size: 4.5rem;
+    margin-top: 10rem;
+}
+.navbar__logo span{
+    color: rgb(255, 48, 48);
+}
+.navbar__nav{
+    margin-left: 17rem;
+}
+.navbar__nav a{
+    color: rgb(0, 255, 81);
+    font-family: var(--lora);
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    margin-top: 0.9rem;
+    transition: all 0.3s ease;
+}
+.navbar__nav a:hover{
+    color: white;
+    font-size: 1.4rem;
+}
+.btn{
+    background-color: red;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 18px;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    transition: all 0.4s linear;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: black;
+    border: 3px solid red;
+}
+.hero__content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    font-size: 65px;
+}
+h3{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+h4{
+    color: white;
+    font-size: 2rem;
+}
+.hero__title form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.hero__title form input:first-child{
+    display: inline-block;
+    width: 100%;
+    height: 6vh;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid red;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.hero__title form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-left: -116px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+.hero__title form input:last-child:hover{
+    background-color: rgb(197, 10, 10);
+    cursor: pointer;
+}
+
+/* about */
+
+.about{
+    width: 100%;
+    background-color: black;
+}
+.titlet h1{
+    color: white;
+    font-family: var(--lora);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.titlet h2{
+    color: white;
+    font-family: var(--kanit);
+    font-size: 2rem;
+    margin-bottom: -3rem;
+}
+.titlet span{
+    color: aqua;
+}
+.titlet button{
+    padding: 10px 18px;
+    color: aqua;
+    font-weight: 500;
+    font-family: var(--unut);
+    background-color: black;
+    border: 3px solid aqua;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    margin-left: 47rem;
+    margin-bottom: 2rem;
+    transition: all 0.6s ease;
+}
+.titlet button:hover{
+    color: black;
+    background-color: aqua;
+    border: 3px solid white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.titlet p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: var(--lora);
+    font-weight: 800;
+}
+.titlet .one{
+    margin-bottom: 3rem;
+}
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.about_item .img{
+    height: 62vh;
+}
+.about_item .img_t h2{
+    color: white;
+    text-indent: 15px;
+    font-family: var(--inter);
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+.about_item .img_t span{
+    color: rgb(154, 255, 255);
+}
+.about_item .img_t p{
+    color: white;
+    font-family: var(--qalin);
+    letter-spacing: 1px;
+    margin-bottom: 3.5rem;
+}
+
+/* stadiums */
+
+.stadiums{
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+}
+.st_title{
+    color: white;
+    font-family: var(--kanit);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+}
+.st_title span{
+    color: rgb(0, 132, 255);
+}
+.st_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.st_item .img{
+    height: 40vh;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease;
+}
+.st_item .img:hover{
+    filter: brightness(70%);
+    cursor: pointer;
+}
+.st_item .img_ti h2{
+    color: white;
+    text-indent: 2.5rem;
+    font-family: var(--unut);
+    font-size: 2rem;
+}
+.st_item .img_ti p{
+    color: white;
+    text-indent: 15px;
+    margin-bottom: 2rem;
+}
+
+/* stars */
+
+.stars{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.sr_title h2{
+    color: white;
+    font-family: var(--lora);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.gallery{
+    display: flex;
+    height: 22rem;
+    gap: 1rem;
+}
+.gallery > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    margin-bottom: 3rem;
+}
+.gallery > div:hover{
+    flex: 5;
+    cursor: pointer;
+}
+.gal_lery{
+    display: flex;
+    height: 22rem;
+    gap: 1rem;
+}
+.gal_lery > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    margin-bottom: 3rem;
+}
+.gal_lery > div:hover{
+    flex: 5;
+    cursor: pointer;
+}
+.gal_lerler{
+    display: flex;
+    height: 22rem;
+    gap: 1rem;
+}
+.gal_lerler > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    margin-bottom: 3rem;
+}
+.gal_lerler > div:hover{
+    flex: 5;
+    cursor: pointer;
+}
+.but button{
+    padding: 15px 15px;
+    font-family: var(--inter);
+    margin-bottom: 3rem;
+    background-color: rgb(21, 255, 0);
+    color: white;
+    border: 3px solid white;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.but button:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+   background-color: white;
+   color: rgb(21, 255, 0);
+   border: 3px solid rgb(21, 255, 0);
+}
+
+/* contact */
+
+.contact{
+    background-image: url(/field.webp);
+    background-repeat: no-repeat;
+}
+.con_title{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: var(--inter);
+}
+.title h2{
+    font-size: 3.8rem;
+    color: #181717;
+    font-family: var(--unbut);
+  }
+  .con_item{
+    margin-top: 2rem;
+    border-bottom: 1px solid #fff;
+  }
+  .con_item form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .con_item form input{
+    height: 7vh;
+    font-size: 1.3rem;
+    text-indent: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid white;
+    color: #fff;
+    font-family: var(--lora);
+    border-radius: 12px;
+  }
+  .con_item form textarea{
+    height: 23vh;
+    font-size: 1.3rem;
+    text-indent: 1rem;
+    padding-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid white;
+    color: white;
+    font-family: var(--lora);
+    border-radius: 12px;
+  }
+  .con_item .social button{
+    width: 86rem;
+    height: 7vh;
+    font-size: 1.3rem;
+    text-indent: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid white;
+    color: #fff;
+    font-family: var(--www);
+    border-radius: 12px;
+    margin-bottom: 3rem;
+  }
+  .con_item .social button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .con_item .media a{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    padding: 20px 20px;
+    transition: all 0.6s ease;
+  }
+  .fa-telegram{
+    transition: 0.5s ease;
+  }
+  .fa-telegram:hover{
+    color: rgb(8, 140, 255);
+    font-size: 3.3rem;
+  }
+  
+  .fa-instagram{
+    transition: 0.5s ease;
+  }
+  .fa-instagram:hover{
+    color: rgb(239, 12, 134);
+    font-size: 3.3rem;
+  }
+  
+  .fa-facebook-f{
+    transition: 0.5s ease;
+  }
+  .fa-facebook-f:hover{
+    color: rgb(20, 0, 239);
+    font-size: 3.3rem;
+  }
+  
+  .fa-twitter{
+    transition: 0.5s ease;
+  }
+  .fa-twitter:hover{
+    color: rgb(40, 100, 152);
+    font-size: 3.3rem;
+  }
